@@ -308,6 +308,7 @@ if (isset($_POST['confirmed_prompt']) && $_POST['confirmed_prompt'] !== '') {
             </div>
         </div>
 
+
         <?php if ($error): ?>
         <div
             class="mb-6 p-4 rounded-xl bg-red-950/40 border border-red-500/35 text-red-200 text-xs flex items-start gap-2">
