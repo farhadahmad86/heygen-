@@ -1,39 +1,26 @@
 <?php
-// 1. Configuration
-$apiKey = 'sk_V2_hgu_kb8Tm9lHwum_LHdCTsvowJ0OlsOACkJ8UsTbeCM7cSFL'; // Replace with your actual key
-$apiUrl = 'https://api.heygen.com/v2/video/generate';
+// 1. Configuration (Updated to the V3 Endpoint from your documentation)
+$apiKey = 'sk_V2_hgu_kYG8xXTCkbg_yIgNTLY5Qk30GG1nAgrGzEspeDB9rWle';
+$apiUrl = 'https://api.heygen.com/v3/video-agents';
 
 // 2. Mock Recipe Data (Simulating the output of your client's script)
 $title = "Creamy Garlic Chicken";
-$imageUrl = "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600"; // Free stock food image
+$imageUrl = "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600";
 
-// 3. Constructing the Payload for HeyGen Video Translate / Script-to-Video
+// 3. Build the text prompt exactly how your client's tool expects it
+$recipePrompt = "Create a 9:16 vertical recipe marketing video for Kitchen2MyTable. "
+    . "Recipe Title: {$title}. "
+    . "Exact Kitchen2MyTable Recipe Image URL: {$imageUrl}. "
+    . "Instructions: Cook chicken until golden brown, add cream, garlic, and spinach. "
+    . "Scene 4 Reveal: Scale the recipe image to full width with a blurred background copy. "
+    . "Scene 5 CTA: Background #80336b, Gold text #f7b948 saying: What do you want to cook today? Let Kitchen2MyTable help. Sign up before July 5th and become a Founding Member. Kitchen2MyTable.com";
+
+// 4. Constructing the Payload matching V3 Documentation
 $payload = [
-    "title" => "Kitchen2MyTable Demo - " . $title,
-    "callback_url" => "",
-    "dimension" => "9:16", // Force Vertical aspect ratio
-    "video_setting" => [
-        "background_color" => "#80336b" // Client's purple
-    ],
-    "clips" => [
-        [
-            "script" => [
-                "type" => "text",
-                "text" => "Looking for an easy dinner idea? Today we're making " . $title . ". Start with a few simple ingredients and let Kitchen2MyTable guide the way.",
-                "voice_id" => "2d5a4a5643ac44da8aee78229b7d667a" // Example code for a warm female voice
-            ]
-        ],
-        [
-            "script" => [
-                "type" => "text",
-                "text" => "What do you want to cook today? Let Kitchen2MyTable help. Sign up before July 5th and become a Founding Member. Visit Kitchen2MyTable.com",
-                "voice_id" => "2d5a4a5643ac44da8aee78229b7d667a"
-            ]
-        ]
-    ]
+    "prompt" => $recipePrompt
 ];
 
-// 4. Send the Request via cURL
+// 5. Send the Request via cURL
 $ch = curl_init($apiUrl);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
@@ -47,6 +34,6 @@ $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-// 5. Output Result
+// 6. Output Result
 echo "HTTP Status Code: " . $httpCode . "\n";
 echo "Response:\n" . $response;
