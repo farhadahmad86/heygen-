@@ -65,6 +65,13 @@ class MockPDOStatement
                 'ingredients' => "- 4 pork chops, about 1.5 lb total (680 g total)\n- 2 tbsp (30 ml) Dijon mustard\n- 1 tbsp (15 ml) olive oil\n- 1/2 tsp salt\n- 1/2 tsp black pepper\n- 1/2 cup (60 g) breadcrumbs\n- 2 tbsp (30 ml) chopped fresh parsley\n- 1 tbsp (15 ml) chopped fresh rosemary",
                 'steps' => "1. Preheat oven to 375°F (190°C). Mix Dijon mustard, olive oil, salt, and pepper in a small bowl. Rub over chops.\n2. In another bowl, combine breadcrumbs, parsley, and rosemary.\n3. Press the breadcrumb mixture firmly onto both sides of the pork chops ensuring an even coating.\n4. Bake on a sheet for 20-25 minutes until the crust is golden and pork is cooked through. Rest before serving.",
                 'image_url' => '/uploads/herb_crusted_pork_chops.jpg'
+            ],
+            6 => [
+                'id' => 6,
+                'title' => 'Entrée: United States – Pan-Seared Sea Bass with Lemon Butter Sauce',
+                'ingredients' => "- 2 sea bass fillets (about 12 oz / 340 g total)\n- Salt and pepper to taste\n- 2 tbsp (30 ml) olive oil\n- 3 tbsp (45 g) unsalted butter\n- 2 cloves garlic, minced\n- Juice of 1 lemon\n- 1 tbsp fresh parsley, chopped",
+                'steps' => "1. Season sea bass fillets on both sides.\n2. Sear skin-side down over medium-high heat for 3-4 minutes, flip and repeat.\n3. Melt butter, sauté minced garlic, and stir in lemon juice.\n4. Return fillets to coat with sauce and garnish with fresh parsley.",
+                'image_url' => 'https://kitchen2mytable.com/uploads/recipe_6.jpg' // Fallback sea food visual asset URL
             ]
         ];
 

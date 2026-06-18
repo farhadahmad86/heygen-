@@ -194,8 +194,10 @@ if (isset($_POST['id']) && $_POST['id'] !== '' && !isset($_POST['confirmed_promp
             . "  - Voiceover: \"The result is a satisfying meal you can feel good about putting on the table.\"\n\n"
             . "* Scene 5 - Branded Founding Member CTA (Duration: {$scene5Duration} seconds):\n"
             . "  - Visual: Clean closing brand screen on the signature Purple background (#80336b) with elegant Gold (#f7b948) highlight text overlays.\n"
-            . "  - Screen Text & Voiceover (VERBATIM SAME TEXT FOR BOTH OVERLAY AND NARRATION):\n"
-            . "    \"What do you want to cook today? Let Kitchen2MyTable help. Sign up before July 5th and become a Founding Member. Receive complimentary Executive Chef access through 12/31/2026. Visit Kitchen2MyTable.com\"";
+            . "  - Screen Text (DISPLAY EXACTLY AS WRITTEN):\n"
+            . "    \"What do you want to cook today? Let kitchen2mytable.com help. Sign up before July 5th and become a Founding Member. Receive complimentary Executive Chef access through 12/31/2026. Visit kitchen2mytable.com\""
+            . "  - Voiceover (MUST MATCH WORD-FOR-WORD ORDER OF SCREEN TEXT):\n"
+            . "    \"What do you want to cook today? Let Kitchen to My Table dot com help. Sign up before July 5th and become a Founding Member. Receive complimentary Executive Chef access through 12/31/2026. Visit Kitchen to My Table dot com\"";
 
         $previewMode = true;
     }
