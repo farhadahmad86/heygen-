@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex University | Premium Website Design</title>
+    <!-- Tailwind CSS for modern utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Playfair Display for premium academic typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for clean icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              univBlue: "#0D47A1",
+              univBlueDark: "#0a3981",
+              univGold: "#FFC107",
+              univGoldHover: "#e0a800",
+              softGray: "#F8F9FA",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+            borderRadius: {
+              premium: "18px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glassmorphism {
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+      .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          rgba(13, 71, 161, 0.92) 0%,
+          rgba(10, 57, 129, 0.75) 100%
+        );
+      }
+      .zoom-effect:hover img {
+        transform: scale(1.05);
+      }
+      .smooth-transition {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+  </head>
+  <body class="bg-white font-sans text-slate-800 antialiased overflow-x-hidden">
+    <!-- ================= NAVBAR ================= -->
+    <header
+      class="fixed top-0 w-full z-50 glassmorphism shadow-sm border-b border-gray-100"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div
+            class="w-10 h-10 bg-univBlue flex items-center justify-center rounded-lg text-white font-serif text-xl font-bold tracking-wider smooth-transition group-hover:bg-univGold"
+          >
+            A
+          </div>
+          <div>
+            <span
+              class="font-serif text-xl font-bold tracking-tight text-univBlue block leading-tight"
+              >APEX</span
+            >
+            <span
+              class="text-xs uppercase tracking-widest text-slate-500 font-semibold block -mt-1"
+              >University</span
+            >
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav
+          class="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-600"
+        >
+          <a href="#" class="text-univBlue border-b-2 border-univBlue pb-1"
+            >Home</a
+          >
+          <a
+            href="#programs"
+            class="hover:text-univBlue smooth-transition pb-1 border-b-2 border-transparent hover:border-univBlue"
+            >Programs</a
+          >
+          <a
+            href="#why-us"
+            class="hover:text-univBlue smooth-transition pb-1 border-b-2 border-transparent hover:border-univBlue"
+            >About</a
+          >
+          <a
+            href="#news"
+            class="hover:text-univBlue smooth-transition pb-1 border-b-2 border-transparent hover:border-univBlue"
+            >News & Events</a
+          >
+          <a
+            href="#campus"
+            class="hover:text-univBlue smooth-transition pb-1 border-b-2 border-transparent hover:border-univBlue"
+            >Campus Life</a
+          >
+        </nav>
+
+        <!-- CTA & Actions -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <button
+            class="text-slate-600 hover:text-univBlue font-medium text-sm transition mr-2"
+          >
+            <i class="fa-solid fa-magnifying-glass text-base"></i>
+          </button>
+          <a
+            href="#"
+            class="bg-univBlue hover:bg-univBlueDark text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-blue-900/10 smooth-transition"
+            >Apply Now</a
+          >
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="lg:hidden text-slate-700 focus:outline-none">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section
+      class="relative min-h-screen pt-20 flex items-center bg-slate-900 overflow-hidden"
+    >
+      <!-- Campus Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80"
+          alt="Apex University Campus"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 hero-gradient"></div>
+      </div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 w-full py-24 lg:py-32 grid lg:grid-cols-12 gap-12 items-center"
+      >
+        <!-- Hero Text Content -->
+        <div
+          class="lg:col-span-7 space-y-6 text-white text-center lg:text-left"
+        >
+          <span
+            class="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase text-univGold border border-white/10 backdrop-blur-sm"
+          >
+            <i class="fa-solid fa-award"></i> Ranked Top 50 Globally
+          </span>
+          <h1
+            class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] text-white"
+          >
+            Shape Your Future <br /><span
+              class="text-univGold italic font-normal"
+              >With Excellence</span
+            >
+          </h1>
+          <p
+            class="text-lg text-slate-200 font-light max-w-xl mx-auto lg:mx-0 leading-relaxed"
+          >
+            Join a world-class academic community driven by pioneering research,
+            global perspectives, and an unwavering commitment to innovation.
+          </p>
+          <div
+            class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+          >
+            <a
+              href="#"
+              class="bg-univGold hover:bg-univGoldHover text-slate-900 px-8 py-4 rounded-full font-semibold shadow-xl shadow-amber-500/10 smooth-transition text-center"
+              >Apply Now</a
+            >
+            <a
+              href="#programs"
+              class="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm px-8 py-4 rounded-full font-semibold smooth-transition text-center"
+              >Explore Programs</a
+            >
+          </div>
+        </div>
+
+        <!-- Floating Statistics Cards Space / Design Balance -->
+        <div class="lg:col-span-5 relative w-full h-full hidden lg:block">
+          <!-- Decorative Graphic Lines -->
+          <div
+            class="absolute -top-12 -right-12 w-48 h-48 border border-white/10 rounded-full pointer-events-none"
+          ></div>
+          <div
+            class="absolute -bottom-12 -left-12 w-72 h-72 border border-white/5 rounded-full pointer-events-none"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Floating Statistics Grid (Bottom Layout Anchor) -->
+      <div
+        class="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-20 max-w-7xl mx-auto px-6 hidden md:block"
+      >
+        <div
+          class="grid grid-cols-3 gap-6 bg-white p-6 rounded-premium shadow-xl border border-gray-100"
+        >
+          <div
+            class="flex items-center space-x-4 p-4 border-r border-gray-100 last:border-0"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50 text-univBlue rounded-xl flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-slate-900 font-serif">
+                15,000+
+              </div>
+              <div
+                class="text-xs font-semibold text-slate-500 uppercase tracking-wider"
+              >
+                Active Students
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 p-4 border-r border-gray-100 last:border-0"
+          >
+            <div
+              class="w-12 h-12 bg-amber-50 text-univGold rounded-xl flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-slate-900 font-serif">
+                120+
+              </div>
+              <div
+                class="text-xs font-semibold text-slate-500 uppercase tracking-wider"
+              >
+                Academic Programs
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4 p-4 last:border-0">
+            <div
+              class="w-12 h-12 bg-blue-50 text-univBlue rounded-xl flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-slate-900 font-serif">
+                950+
+              </div>
+              <div
+                class="text-xs font-semibold text-slate-500 uppercase tracking-wider"
+              >
+                Expert Faculty
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Padding spacer for floating stats -->
+    <div class="h-16 md:hidden"></div>
+
+    <!-- ================= PROGRAMS SECTION ================= -->
+    <section id="programs" class="py-24 lg:py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-widest text-univBlue mb-3 block"
+            >Academic Divisions</span
+          >
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">
+            Explore Our World-Class Programs
+          </h2>
+          <div class="w-12 h-1 bg-univGold mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Card Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="group bg-softGray hover:bg-white rounded-premium p-8 border border-transparent hover:border-gray-100 shadow-sm hover:shadow-xl smooth-transition flex flex-col justify-between h-80"
+          >
+            <div>
+              <div
+                class="w-14 h-14 bg-white shadow-sm text-univBlue group-hover:bg-univBlue group-hover:text-white rounded-2xl flex items-center justify-center text-2xl smooth-transition mb-6"
+              >
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2 font-serif">
+                Engineering & Technology
+              </h3>
+              <p class="text-sm text-slate-500 font-light leading-relaxed">
+                Pioneering tomorrow's breakthroughs with intensive courses in
+                AI, aerospace, and computing architecture.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="inline-flex items-center text-xs font-bold uppercase text-univBlue tracking-wider group-hover:text-univGold smooth-transition pt-4"
+              >Explore Degree
+              <i
+                class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 smooth-transition"
+              ></i
+            ></a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="group bg-softGray hover:bg-white rounded-premium p-8 border border-transparent hover:border-gray-100 shadow-sm hover:shadow-xl smooth-transition flex flex-col justify-between h-80"
+          >
+            <div>
+              <div
+                class="w-14 h-14 bg-white shadow-sm text-univBlue group-hover:bg-univBlue group-hover:text-white rounded-2xl flex items-center justify-center text-2xl smooth-transition mb-6"
+              >
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2 font-serif">
+                Business & Economics
+              </h3>
+              <p class="text-sm text-slate-500 font-light leading-relaxed">
+                Developing global strategic leaders through experiential asset
+                management and corporate tracks.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="inline-flex items-center text-xs font-bold uppercase text-univBlue tracking-wider group-hover:text-univGold smooth-transition pt-4"
+              >Explore Degree
+              <i
+                class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 smooth-transition"
+              ></i
+            ></a>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="group bg-softGray hover:bg-white rounded-premium p-8 border border-transparent hover:border-gray-100 shadow-sm hover:shadow-xl smooth-transition flex flex-col justify-between h-80"
+          >
+            <div>
+              <div
+                class="w-14 h-14 bg-white shadow-sm text-univBlue group-hover:bg-univBlue group-hover:text-white rounded-2xl flex items-center justify-center text-2xl smooth-transition mb-6"
+              >
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2 font-serif">
+                Medical & Health Sciences
+              </h3>
+              <p class="text-sm text-slate-500 font-light leading-relaxed">
+                Advancing critical patient care systems paired with high-impact
+                clinical laboratory research operations.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="inline-flex items-center text-xs font-bold uppercase text-univBlue tracking-wider group-hover:text-univGold smooth-transition pt-4"
+              >Explore Degree
+              <i
+                class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 smooth-transition"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section id="why-us" class="py-24 lg:py-32 bg-softGray">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <!-- Left Sticky Side Info -->
+          <div class="lg:col-span-4 space-y-6 text-center lg:text-left">
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-univBlue block"
+              >The Apex Difference</span
+            >
+            <h2
+              class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight"
+            >
+              An Institution Cultivating Future Innovators
+            </h2>
+            <p class="text-sm text-slate-500 font-light leading-relaxed">
+              Our values emphasize unparalleled scholastic growth through
+              targeted mentorship, modernized infrastructures, and expansive
+              global career pipelines.
+            </p>
+            <div class="pt-2">
+              <a
+                href="#"
+                class="inline-flex items-center bg-univBlue hover:bg-univBlueDark text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider smooth-transition shadow-lg shadow-blue-900/10"
+                >Learn History</a
+              >
+            </div>
+          </div>
+
+          <!-- Right Feature Cards Matrix -->
+          <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6">
+            <!-- Feature 1 -->
+            <div
+              class="bg-white p-6 rounded-premium border border-gray-100 shadow-sm hover:shadow-md smooth-transition flex flex-col justify-between"
+            >
+              <div>
+                <div
+                  class="w-12 h-12 bg-amber-50 text-univGold rounded-xl flex items-center justify-center text-lg mb-4"
+                >
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">
+                  Generous Scholarships
+                </h4>
+                <p class="text-xs text-slate-500 font-light leading-relaxed">
+                  Annually matching financial aids and performance-based grants
+                  to over 70% of enrolled candidates.
+                </p>
+              </div>
+            </div>
+            <!-- Feature 2 -->
+            <div
+              class="bg-white p-6 rounded-premium border border-gray-100 shadow-sm hover:shadow-md smooth-transition flex flex-col justify-between"
+            >
+              <div>
+                <div
+                  class="w-12 h-12 bg-blue-50 text-univBlue rounded-xl flex items-center justify-center text-lg mb-4"
+                >
+                  <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">
+                  Experienced Faculty
+                </h4>
+                <p class="text-xs text-slate-500 font-light leading-relaxed">
+                  Learn from international laureates, seasoned enterprise
+                  executives, and leading analytical thought pioneers.
+                </p>
+              </div>
+            </div>
+            <!-- Feature 3 -->
+            <div
+              class="bg-white p-6 rounded-premium border border-gray-100 shadow-sm hover:shadow-md smooth-transition flex flex-col justify-between"
+            >
+              <div>
+                <div
+                  class="w-12 h-12 bg-blue-50 text-univBlue rounded-xl flex items-center justify-center text-lg mb-4"
+                >
+                  <i class="fa-solid fa-landmark"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">
+                  Modern Campus
+                </h4>
+                <p class="text-xs text-slate-500 font-light leading-relaxed">
+                  State-of-the-art interactive auditoriums, smart-labs, complex
+                  athletic courts, and vast research archives.
+                </p>
+              </div>
+            </div>
+            <!-- Feature 4 -->
+            <div
+              class="bg-white p-6 rounded-premium border border-gray-100 shadow-sm hover:shadow-md smooth-transition flex flex-col justify-between"
+            >
+              <div>
+                <div
+                  class="w-12 h-12 bg-amber-50 text-univGold rounded-xl flex items-center justify-center text-lg mb-4"
+                >
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">
+                  Career Opportunities
+                </h4>
+                <p class="text-xs text-slate-500 font-light leading-relaxed">
+                  Direct entry programs partnering seamlessly into top-tier
+                  global Fortune 500 enterprises post-graduation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWS & EVENTS ================= -->
+    <section id="news" class="py-24 lg:py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-16"
+        >
+          <div>
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-univBlue mb-3 block"
+              >Campus Updates</span
+            >
+            <h2
+              class="font-serif text-3xl sm:text-4xl font-bold text-slate-900"
+            >
+              News & Upcoming Events
+            </h2>
+            <div class="w-12 h-1 bg-univGold mt-4 rounded-full"></div>
+          </div>
+          <a
+            href="#"
+            class="mt-4 md:mt-0 inline-flex items-center text-sm font-bold uppercase text-univBlue tracking-wider hover:text-univGold smooth-transition"
+            >View All Activity <i class="fa-solid fa-arrow-right ml-2"></i
+          ></a>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8">
+          <!-- Highlighted Large Event Card -->
+          <div
+            class="lg:col-span-5 group relative overflow-hidden rounded-premium bg-slate-900 min-h-[400px] flex flex-col justify-end p-8 shadow-md"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+              alt="Featured News"
+              class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 smooth-transition"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"
+            ></div>
+
+            <div class="relative z-10 space-y-3">
+              <span
+                class="bg-univGold text-slate-900 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+                >Featured Event</span
+              >
+              <div class="text-white/80 text-xs font-medium">
+                <i class="fa-regular fa-calendar-days mr-1"></i> Oct 14, 2026
+              </div>
+              <h3
+                class="text-xl sm:text-2xl font-serif font-bold text-white leading-tight"
+              >
+                Annual International Tech & Sustainable Innovation Forum 2026
+              </h3>
+              <p class="text-xs text-slate-300 font-light max-w-sm">
+                Gathering leading innovators to discuss practical green-energy
+                integration matrix changes.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center text-xs font-bold text-univGold uppercase tracking-widest pt-2"
+                >Register Now
+                <i class="fa-solid fa-chevron-right ml-1.5 text-[10px]"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Clean Horizontal Cards Stack -->
+          <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+            <!-- Event Row 1 -->
+            <div
+              class="flex items-center space-x-6 p-4 rounded-premium hover:bg-softGray border border-transparent hover:border-gray-100 smooth-transition"
+            >
+              <!-- Date Badge -->
+              <div
+                class="flex-shrink-0 w-16 h-16 bg-blue-50 text-univBlue rounded-xl flex flex-col items-center justify-center font-bold"
+              >
+                <span class="text-lg leading-none">24</span>
+                <span
+                  class="text-[10px] uppercase tracking-widest font-semibold mt-0.5"
+                  >Sep</span
+                >
+              </div>
+              <div>
+                <span
+                  class="text-[10px] uppercase tracking-widest font-bold text-slate-400"
+                  >Research Brief</span
+                >
+                <h4
+                  class="text-base font-bold text-slate-900 font-serif line-clamp-1 hover:text-univBlue smooth-transition"
+                >
+                  <a href="#"
+                    >Biomedical lab pioneers revolutionary cell regenerative
+                    enzymes template.</a
+                  >
+                </h4>
+                <p class="text-xs text-slate-500 font-light mt-1 line-clamp-1">
+                  Dean of Biomedical departments confirmed successful trial
+                  tracking parameters validation metrics...
+                </p>
+              </div>
+            </div>
+
+            <!-- Event Row 2 -->
+            <div
+              class="flex items-center space-x-6 p-4 rounded-premium hover:bg-softGray border border-transparent hover:border-gray-100 smooth-transition"
+            >
+              <!-- Date Badge -->
+              <div
+                class="flex-shrink-0 w-16 h-16 bg-amber-50 text-univGold rounded-xl flex flex-col items-center justify-center font-bold"
+              >
+                <span class="text-lg leading-none">08</span>
+                <span
+                  class="text-[10px] uppercase tracking-widest font-semibold mt-0.5"
+                  >Oct</span
+                >
+              </div>
+              <div>
+                <span
+                  class="text-[10px] uppercase tracking-widest font-bold text-slate-400"
+                  >Exhibition</span
+                >
+                <h4
+                  class="text-base font-bold text-slate-900 font-serif line-clamp-1 hover:text-univBlue smooth-transition"
+                >
+                  <a href="#"
+                    >Global Alumni Network holds autumn creative enterprise
+                    showcase.</a
+                  >
+                </h4>
+                <p class="text-xs text-slate-500 font-light mt-1 line-clamp-1">
+                  Welcoming over 40 active product platforms hosted directly
+                  inside campus pavilions...
+                </p>
+              </div>
+            </div>
+
+            <!-- Event Row 3 -->
+            <div
+              class="flex items-center space-x-6 p-4 rounded-premium hover:bg-softGray border border-transparent hover:border-gray-100 smooth-transition"
+            >
+              <!-- Date Badge -->
+              <div
+                class="flex-shrink-0 w-16 h-16 bg-blue-50 text-univBlue rounded-xl flex flex-col items-center justify-center font-bold"
+              >
+                <span class="text-lg leading-none">19</span>
+                <span
+                  class="text-[10px] uppercase tracking-widest font-semibold mt-0.5"
+                  >Nov</span
+                >
+              </div>
+              <div>
+                <span
+                  class="text-[10px] uppercase tracking-widest font-bold text-slate-400"
+                  >Symposium</span
+                >
+                <h4
+                  class="text-base font-bold text-slate-900 font-serif line-clamp-1 hover:text-univBlue smooth-transition"
+                >
+                  <a href="#"
+                    >Macroeconomic forecasts: Structuring systemic global
+                    corporate shifts.</a
+                  >
+                </h4>
+                <p class="text-xs text-slate-500 font-light mt-1 line-clamp-1">
+                  Prominent industrial central bankers open registration access
+                  for senior business cohorts...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="py-24 lg:py-32 bg-slate-900 relative overflow-hidden">
+      <!-- Abstract glowing circles -->
+      <div
+        class="absolute -top-24 -left-24 w-96 h-96 bg-blue-800/20 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute -bottom-24 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-widest text-univGold mb-3 block"
+            >Student Voices</span
+          >
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+            What Our Scholars Say
+          </h2>
+          <div class="w-12 h-1 bg-univGold mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Glassmorphism Cards Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="glassmorphism p-8 rounded-premium flex flex-col justify-between space-y-6 shadow-xl"
+          >
+            <div class="space-y-4">
+              <div class="flex text-univGold text-xs space-x-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p
+                class="text-slate-200 text-sm font-light italic leading-relaxed"
+              >
+                "The specialized tech infrastructure coupled with direct
+                industry mentorship reshaped my entire outlook. I was able to
+                secure my software engineer offer months prior to graduation."
+              </p>
+            </div>
+            <div
+              class="flex items-center space-x-3 pt-4 border-t border-white/10"
+            >
+              <div class="w-10 h-10 rounded-full bg-slate-700 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                  alt="Student"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <div class="text-sm font-bold text-white">Elena Rostova</div>
+                <div
+                  class="text-[10px] text-slate-300 tracking-wider uppercase font-medium"
+                >
+                  B.S. Computer Science '25
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="glassmorphism p-8 rounded-premium flex flex-col justify-between space-y-6 shadow-xl"
+          >
+            <div class="space-y-4">
+              <div class="flex text-univGold text-xs space-x-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p
+                class="text-slate-200 text-sm font-light italic leading-relaxed"
+              >
+                "Apex provides a beautifully collaborative environment. Faculty
+                members are genuinely invested in your personal initiatives,
+                offering advice well outside normal lecture bounds."
+              </p>
+            </div>
+            <div
+              class="flex items-center space-x-3 pt-4 border-t border-white/10"
+            >
+              <div class="w-10 h-10 rounded-full bg-slate-700 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+                  alt="Student"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <div class="text-sm font-bold text-white">Marcus Vance</div>
+                <div
+                  class="text-[10px] text-slate-300 tracking-wider uppercase font-medium"
+                >
+                  M.B.A. Candidate
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="glassmorphism p-8 rounded-premium flex flex-col justify-between space-y-6 shadow-xl md:col-span-2 lg:col-span-1 mx-auto md:max-w-md lg:max-w-none"
+          >
+            <div class="space-y-4">
+              <div class="flex text-univGold text-xs space-x-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p
+                class="text-slate-200 text-sm font-light italic leading-relaxed"
+              >
+                "The access to global public health internships completely
+                shifted my trajectory. Learning operations in real-world
+                scenarios across state borders gave me unparalleled field
+                clarity."
+              </p>
+            </div>
+            <div
+              class="flex items-center space-x-3 pt-4 border-t border-white/10"
+            >
+              <div class="w-10 h-10 rounded-full bg-slate-700 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80"
+                  alt="Student"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <div class="text-sm font-bold text-white">Amara Sterling</div>
+                <div
+                  class="text-[10px] text-slate-300 tracking-wider uppercase font-medium"
+                >
+                  Pre-Med Sciences '26
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CAMPUS GALLERY ================= -->
+    <section id="campus" class="py-24 lg:py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-widest text-univBlue mb-3 block"
+            >Visual Journey</span
+          >
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">
+            Life Inside Apex Campus
+          </h2>
+          <div class="w-12 h-1 bg-univGold mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Grid Layout with smooth hover effects -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div
+            class="zoom-effect relative overflow-hidden rounded-premium h-48 sm:h-72 bg-slate-100 shadow-sm"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80"
+              alt="Library"
+              class="w-full h-full object-cover smooth-transition"
+            />
+          </div>
+          <div
+            class="zoom-effect relative overflow-hidden rounded-premium h-48 sm:h-72 md:col-span-2 bg-slate-100 shadow-sm"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+              alt="Labs"
+              class="w-full h-full object-cover smooth-transition"
+            />
+          </div>
+          <div
+            class="zoom-effect relative overflow-hidden rounded-premium h-48 sm:h-72 bg-slate-100 shadow-sm"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5c?auto=format&fit=crop&w=600&q=80"
+              alt="Study space"
+              class="w-full h-full object-cover smooth-transition"
+            />
+          </div>
+          <div
+            class="zoom-effect relative overflow-hidden rounded-premium h-48 sm:h-72 md:col-span-2 bg-slate-100 shadow-sm"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1544531516-a5e340738f28?auto=format&fit=crop&w=800&q=80"
+              alt="Graduation"
+              class="w-full h-full object-cover smooth-transition"
+            />
+          </div>
+          <div
+            class="zoom-effect relative overflow-hidden rounded-premium h-48 sm:h-72 bg-slate-100 shadow-sm"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80"
+              alt="Auditorium"
+              class="w-full h-full object-cover smooth-transition"
+            />
+          </div>
+          <div
+            class="zoom-effect relative overflow-hidden rounded-premium h-48 sm:h-72 bg-slate-100 shadow-sm"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=600&q=80"
+              alt="Main Building"
+              class="w-full h-full object-cover smooth-transition"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer
+      class="bg-softGray text-slate-600 border-t border-gray-200/60 pt-16 pb-8"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-gray-200"
+      >
+        <!-- Brand Column -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="#" class="flex items-center space-x-3">
+            <div
+              class="w-9 h-9 bg-univBlue flex items-center justify-center rounded-lg text-white font-serif text-lg font-bold"
+            >
+              A
+            </div>
+            <div>
+              <span
+                class="font-serif text-lg font-bold tracking-tight text-univBlue block leading-tight"
+                >APEX</span
+              >
+              <span
+                class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold block -mt-1"
+                >University</span
+              >
+            </div>
+          </a>
+          <p class="text-xs text-slate-400 font-light leading-relaxed max-w-sm">
+            Dedicated to transformative institutional growth, comprehensive
+            research excellence, and creating global academic pathways for
+            generations to come.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex space-x-3 pt-2">
+            <a
+              href="#"
+              class="w-8 h-8 bg-white border border-gray-200 text-slate-500 rounded-full flex items-center justify-center text-sm hover:bg-univBlue hover:text-white hover:border-univBlue smooth-transition"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 bg-white border border-gray-200 text-slate-500 rounded-full flex items-center justify-center text-sm hover:bg-univBlue hover:text-white hover:border-univBlue smooth-transition"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 bg-white border border-gray-200 text-slate-500 rounded-full flex items-center justify-center text-sm hover:bg-univBlue hover:text-white hover:border-univBlue smooth-transition"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 bg-white border border-gray-200 text-slate-500 rounded-full flex items-center justify-center text-sm hover:bg-univBlue hover:text-white hover:border-univBlue smooth-transition"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4
+            class="text-xs uppercase font-bold tracking-widest text-slate-900"
+          >
+            Explore
+          </h4>
+          <ul class="space-y-2 text-xs font-medium text-slate-500">
+            <li>
+              <a href="#" class="hover:text-univBlue smooth-transition"
+                >Academic Calendar</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-univBlue smooth-transition"
+                >Graduate Programs</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-univBlue smooth-transition"
+                >Online Education</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-univBlue smooth-transition"
+                >Research Institutes</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4
+            class="text-xs uppercase font-bold tracking-widest text-slate-900"
+          >
+            Contact
+          </h4>
+          <ul class="space-y-2 text-xs text-slate-500 font-light">
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-location-dot mt-0.5 text-slate-400"></i>
+              <span>104 University Ave, University Heights, NY 10003</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-phone text-slate-400"></i>
+              <span>+1 (555) 839-2001</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-envelope text-slate-400"></i>
+              <span>admissions@apex.edu</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4
+            class="text-xs uppercase font-bold tracking-widest text-slate-900"
+          >
+            Newsletter
+          </h4>
+          <p class="text-xs text-slate-400 font-light">
+            Stay updated with monthly insights, research updates, and campus
+            event releases.
+          </p>
+          <form class="flex space-x-2 pt-1">
+            <input
+              type="email"
+              placeholder="Your email Address"
+              class="w-full bg-white border border-gray-200 text-xs px-4 py-2.5 rounded-lg focus:outline-none focus:border-univBlue text-slate-700"
+            />
+            <button
+              type="submit"
+              class="bg-univBlue hover:bg-univBlueDark text-white text-xs px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider smooth-transition"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright Info -->
+      <div
+        class="max-w-7xl mx-auto px-6 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 font-light"
+      >
+        <div>&copy; 2026 Apex University. All rights reserved.</div>
+        <div class="flex space-x-4 mt-2 sm:mt-0">
+          <a href="#" class="hover:text-slate-600 smooth-transition"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-slate-600 smooth-transition"
+            >Terms of Service</a
+          >
+          <a href="#" class="hover:text-slate-600 smooth-transition">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
