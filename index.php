@@ -326,8 +326,7 @@ if (isset($_POST['confirmed_prompt']) && $_POST['confirmed_prompt'] !== '') {
         <div class="flex items-center gap-4 mb-6">
             <div
                 class="w-14 h-14 bg-slate-900 border border-brand-purple/40 rounded-2xl flex items-center justify-center shadow-lg p-1.5 overflow-hidden">
-                <img src="/images/logoo.png" alt="Kitchen2MyTable Logo"
-                    class="w-full h-full object-contain error-fallback">
+                <img src="logoo.png" alt="Kitchen2MyTable Logo" class="w-full h-full object-contain error-fallback">
                 <!-- <div
                     class="hidden w-full h-full bg-gradient-to-tr from-brand-purple to-brand-gold rounded-xl items-center justify-center font-bold text-slate-950 text-sm">
                     K2M</div> -->
